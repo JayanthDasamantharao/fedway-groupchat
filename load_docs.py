@@ -8,8 +8,8 @@ from dotenv import load_dotenv
 
 # Load OpenAI key
 load_dotenv()
-# openai_api_key = os.getenv("OPENAI_API_KEY")
-openai_api_key = st.secrets["OPENAI_API_KEY"]
+openai_api_key = os.getenv("OPENAI_API_KEY")
+# openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 def process_and_store_pdf(pdf_path: str, persist_dir: str = "chroma_db"):
     loader = PyPDFLoader(pdf_path)
