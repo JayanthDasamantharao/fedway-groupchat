@@ -1,10 +1,12 @@
 streamlit
 langchain
 langchain-openai
-chromadb
+chromadb==0.4.24
 PyMuPDF
 tiktoken
 sentence-transformers
 openai
 python-dotenv
 langchain-community
+protobuf<4.0.0
+
