@@ -7,8 +7,8 @@ from langchain_core.prompts import PromptTemplate
 from dotenv import load_dotenv
 
 load_dotenv()
-openai_api_key = os.getenv("OPENAI_API_KEY")
-# openai_api_key = st.secrets["OPENAI_API_KEY"]
+# openai_api_key = os.getenv("OPENAI_API_KEY")
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 # 1. Load vector store
 embedding_model = OpenAIEmbeddings(openai_api_key=openai_api_key)
