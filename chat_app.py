@@ -146,7 +146,7 @@ if "ai_score" not in st.session_state:
     st.session_state.ai_score = 0.0
 
 st.set_page_config(page_title="POET Assistant", layout="wide")
-st.title("AI Assistant with Human Escalation")
+st.title("Fedway AI Assistant with Human Escalation")
 
 # === Chat Panel ===
 st.markdown("### 💬 Chat")
