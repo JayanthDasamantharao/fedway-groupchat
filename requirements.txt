@@ -7,3 +7,4 @@ tiktoken
 sentence-transformers
 openai
 python-dotenv
+langchain-community
