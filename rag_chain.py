@@ -7,6 +7,10 @@ from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_core.prompts import PromptTemplate
 from dotenv import load_dotenv
 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 load_dotenv()
 # openai_api_key = os.getenv("OPENAI_API_KEY")
 openai_api_key = st.secrets["OPENAI_API_KEY"]
