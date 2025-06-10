@@ -6,6 +6,10 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from dotenv import load_dotenv
 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 # Load OpenAI key
 load_dotenv()
 openai_api_key = os.getenv("OPENAI_API_KEY")
